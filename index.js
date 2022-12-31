@@ -275,7 +275,7 @@ app.post("/dashboard", async (req, res) => {
   }
 });
 
-const port = process.env.port || 8000
+const PORT = process.env.port || 8000;
 
 app.listen(PORT, () => {
   console.log(`Listenning on port ${PORT}`);
