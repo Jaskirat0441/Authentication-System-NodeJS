@@ -275,6 +275,8 @@ app.post("/dashboard", async (req, res) => {
   }
 });
 
-app.listen(8080, () => {
-  console.log(`Listenning on port 8080`);
+const port = process.env.port || 8000
+
+app.listen(PORT, () => {
+  console.log(`Listenning on port ${PORT}`);
 });
